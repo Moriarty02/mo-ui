@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="layout" content="width=720,font-size=14">
+    <meta name="format-detection" content="telephone=no" />
+    <script>
+        !function(t,e){function i(t){var i=d.getBoundingClientRect().width,o=i/p*100;if(g&&(o=Math.min(o,100)),d.style.fontSize=o+"px",e.layout.rootFontSize=o,h&&window.devicePixelRatio>1&&i<400&&(l.dpr=1,0==i&&(l.dpr=s)),g&&i>540&&(l.dpr=2),d.setAttribute("data-dpr",l.dpr),t){var n=c*l.dpr,r=p/100,m="body {font-size:"+n+"px !important;}";if(g){var r=p/100;m+="body {margin-left:auto !important;margin-right:auto !important;max-width:"+r+"rem;}"}for(var u=[],w=10;w<=40;w++)u.push(".f"+w+"{font-size:"+l.dpr*w+"px !important;}");var f=[m,u.join("")].join("\n");a.write('<style type="text/css">'+f+"</style>")}}var o,n,r,a=t.document,d=a.documentElement,m=a.querySelector('meta[name="viewport"]'),u=a.querySelector('meta[name="layout"]'),s=t.devicePixelRatio||1,p=720,c=12,l=e.layout||(e.layout={}),w=t.navigator.userAgent,f=/(iPhone|ipod|ipad|ios)/i.test(w),h=t.navigator.appVersion.match(/android/gi),g=!(f||h),v=!1;if(u&&(r=u.getAttribute("content")||"")&&(r.match(/width=(\d+)/i),RegExp.$1&&(p=RegExp.$1),r.match(/font-size=(\d+)/i),RegExp.$1&&(c=RegExp.$1),r.match(/dpr(?:=(\d+))?/i)&&(v=RegExp.$1||1)),s>=3?s=3:s>=2?s=2:s>1&&(s=1),/&mobilesafe=1/i.test(location.href)&&(v=1),navigator.userAgent.toLowerCase().match(/(360ms|360ws)\/([\d\.]+)\s360webview\/([\d\.]+)/i)&&(v=1),v&&(s=v),g&&(s=1),n=1/s,l.dpr=s,!m){var y=["initial","maximum","minimum","user-scalable=no"].join("-scale="+n+","),x='<meta name="viewport" content="width=device-width,'+y+'">';a.write(x)}t.addEventListener("resize",function(){clearTimeout(o),o=setTimeout(i,300)},!1),t.addEventListener("pageshow",function(t){t.persisted&&(clearTimeout(o),o=setTimeout(i,300))},!1),i(!0),e.layout.px2rem=function(t){return t/this.rootFontSize},e.layout.rem2px=function(t){return t*this.rootFontSize},e.layout.fontSize=function(t){return t*this.dpr},e.layout.setupRem=i}(window,window.lib||(window.lib={}));
+    </script>
+    <style>
+      * {max-height:99999px;}
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试页面</title>
+</head>
+<body>
+    <div id="app">
+      
+    </div>
+</body>
+</html>
