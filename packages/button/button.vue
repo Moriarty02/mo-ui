@@ -7,7 +7,6 @@
 </template>
 
 <script>
-
 const classNames = {
   primary: 'primary',
   secondary: 'secondary',
@@ -15,7 +14,7 @@ const classNames = {
 }
 
 export default {
-  name:"Button",
+  name:"MoButton",
   props:{
     type: {
       type: String,
@@ -33,7 +32,6 @@ export default {
       }
     }
   },
-
   computed: {
     className: function(){
       return classNames[this.type] || '';
@@ -60,6 +58,9 @@ export default {
     border-radius: 0.04rem;
   }
   .button:active{
+    background-color: #0078FF;
+  }
+    .button:focus{
     background-color: #0078FF;
   }
  

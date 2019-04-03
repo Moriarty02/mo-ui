@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <Button text="点我一下" class="f16"  @click="ButtonClickHanlder"></Button>
+      <mo-button text="打开弹窗" class="f16"  @click="ButtonClickHanlder"></mo-button>
   </div>
 </template>
 
@@ -13,7 +13,9 @@ export default {
   },
   methods: {
   ButtonClickHanlder(){
-    console.log('btn  Clicked');
+    this.$toast({
+        text: '弹窗测试'
+      }).show()
   }
   }
 }

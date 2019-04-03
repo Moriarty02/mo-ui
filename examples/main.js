@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import moUI from './../packages/index.js'
+// import moUI from "../lib/moui.common.js"
+import moUI from "../src"
 import "./assets/normalize.css"
-
 
 
 Vue.use(moUI)
